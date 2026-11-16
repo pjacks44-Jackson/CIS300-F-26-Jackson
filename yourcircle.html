@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Circle | Your Circle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="index.html">
+          <img src="Images/logo.png" alt="Recipe Circle Logo" />
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li>
+              <a href="yourcircle.html" class="active" aria-current="page"
+                >Your Circle</a
+              >
+            </li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="yourkitchen.html">Your Kitchen</a></li>
+          </ul>
+        </nav>
+
+        <form action="#" method="get" class="search-form">
+          <input type="search" name="search" placeholder="Search recipes..." />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="yourcircle-main">
+      <!-- Welcome Section -->
+      <section class="circle-welcome">
+        <h1>Better Together, One Recipe at a Time</h1>
+        <p>
+          Your Circle is where good food and great company come together.
+          Discover what others are cooking, share your favorite recipes, and
+          find inspiration for your next gathering.
+        </p>
+      </section>
+
+      <!-- Gather Around the Table -->
+      <section class="circle-video-section">
+        <div class="circle-video">
+          <video
+            controls
+            preload="metadata"
+            poster="Images/Pic of Dinner Party Video .jpeg"
+          >
+            <source src="Videos/Dinner Party Video.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+
+        <div class="circle-video-content">
+          <h2>Gather Around the Table</h2>
+          <p>
+            Some of the best memories are made around the dinner table. Whether
+            you're hosting friends for the first time or continuing a favorite
+            tradition, sharing a meal brings people together.
+          </p>
+          <p>
+            Find inspiration for your next gathering, discover recipes worth
+            sharing, and make every occasion a little more memorable.
+          </p>
+        </div>
+      </section>
+
+      <!-- Fresh From Your Circle -->
+      <section class="recipe-section circle-recipes">
+        <div class="section-heading">
+          <h2>Fresh From Your Circle</h2>
+        </div>
+
+        <div class="recipe-grid">
+          <article class="recipe-card">
+            <div class="recipe-image">
+              <img src="Images/7-Layer Lasagna.jpeg" alt="7-Layer Lasagna" />
+            </div>
+            <h3>7-Layer Lasagna</h3>
+            <p>Shared by Lexi</p>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-image">
+              <img src="Images/Apple Pie.jpeg" alt="Apple Pie" />
+            </div>
+            <h3>Apple Pie</h3>
+            <p>Shared by Shelby</p>
+          </article>
+
+          <article class="recipe-card">
+            <div class="recipe-image">
+              <img
+                src="Images/Asian Chicken Salad.jpeg"
+                alt="Asian Chicken Salad"
+              />
+            </div>
+            <h3>Asian Chicken Salad</h3>
+            <p>Shared by Hannah</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Share Something Good -->
+      <section class="circle-share">
+        <h2>Share Something Good</h2>
+        <p>
+          Have a recipe that deserves a place at the table? Share your favorite
+          dishes, family traditions, and kitchen creations with your circle.
+        </p>
+        <a href="create.html" class="circle-share-button"> Share a Recipe </a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <a href="index.html">
+          <img
+            src="Images/logo.png"
+            alt="Recipe Circle Logo"
+            class="footer-logo"
+          />
+        </a>
+        <p>&copy; 2026 Recipe Circle. All rights reserved.</p>
+        <a href="mailto:hello@recipecircle.com">Contact Us</a>
+      </div>
+    </footer>
+  </body>
+</html>

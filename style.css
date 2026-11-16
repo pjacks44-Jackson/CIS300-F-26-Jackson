@@ -51,6 +51,35 @@ nav a.active {
   padding-bottom: 10px;
 }
 
+/* Home Page Welcome Section */
+
+.welcome-section {
+  background-color: var(--secondary);
+  border-radius: 20px;
+  padding: 2.5em;
+  margin: 40px;
+}
+
+.welcome-label {
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75em;
+}
+
+.welcome-section h1 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.welcome-description {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 .recipe-section {
   margin: 40px;
 }
@@ -63,15 +92,16 @@ nav a.active {
 
 .recipe-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 25px;
   max-width: 1100px;
   margin: 0 auto;
+  justify-items: center;
 }
 
 .recipe-image {
   width: 100%;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 8px;
 }
@@ -82,6 +112,10 @@ nav a.active {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+.recipe-card {
+  width: 100%;
+  max-width: 350px;
 }
 
 .recipe-card h3 {
@@ -155,19 +189,302 @@ footer {
   text-decoration: underline;
 }
 
+/* Explore Page */
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.featured-card {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.featured-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.featured-card h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+/* Browse by Category */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.category-card h3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 12px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+/* Explore Section Headings */
+
+.explore-section-heading {
+  display: table;
+  background-color: var(--secondary);
+  border-radius: 12px;
+  padding: 15px 25px;
+  margin-bottom: 25px;
+}
+
+.explore-section-heading h1,
+.explore-section-heading h2 {
+  color: var(--primary);
+  margin: 0;
+}
+
+/* Space Between Explore Sections */
+
+.featured-section {
+  margin-bottom: 65px;
+}
+
+/* Alison Roman Recipe Link */
+
+.featured-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+.featured-card-content h3 {
+  position: static;
+  padding: 0;
+  margin: 0 0 8px;
+  color: white;
+  background: none;
+}
+
+.featured-card-content a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.featured-card-content a:hover {
+  color: var(--secondary);
+}
+
+/* Explore Page Margins */
+
+.explore-main {
+  margin: 40px;
+}
+
+/* ========================================
+   YOUR CIRCLE PAGE
+======================================== */
+
+.yourcircle-main {
+  margin: 40px;
+}
+
+/* Welcome Section */
+.circle-welcome {
+  background-color: var(--secondary);
+  padding: 35px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+.circle-welcome h1 {
+  color: var(--primary);
+  margin: 0 0 15px;
+}
+
+.circle-welcome p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Video Section */
+.circle-video-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto 65px;
+  padding: 40px;
+  background-color: var(--accent);
+  border-radius: 12px;
+}
+
+.circle-video {
+  display: flex;
+  justify-content: center;
+}
+
+.circle-video video {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.circle-video-content h2 {
+  color: var(--primary);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.circle-video-content p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Community Recipes */
+.circle-recipes {
+  max-width: 1100px;
+  margin: 0 auto 65px;
+}
+
+/* Share Section */
+.circle-share {
+  background-color: var(--primary);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.circle-share h2 {
+  color: white;
+  margin: 0 0 15px;
+}
+
+.circle-share p {
+  color: white;
+  max-width: 650px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+}
+
+.circle-share-button {
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--primary);
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.circle-share-button:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
 @media (max-width: 1200px) {
   .recipe-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .header-content {
     flex-direction: column;
     gap: 20px;
   }
+  .featured-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .circle-video-section {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 700px) {
   .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+  .welcome-section {
+    padding: 1.5em;
+    margin: 20px;
+  }
+
+  .welcome-section h1 {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  nav a {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .yourcircle-main {
+    margin: 20px;
+  }
+
+  .circle-welcome {
+    padding: 25px;
+  }
+
+  .circle-video-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .circle-video video {
+    max-width: 280px;
+  }
+
+  .circle-share {
+    padding: 30px 20px;
   }
 }
